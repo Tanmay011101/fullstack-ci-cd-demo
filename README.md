@@ -155,7 +155,9 @@ This project highlights:
 - Practical DevOps skills with Jenkins pipelines.
 
 Author: Tanmay
+
 Location: Pune, Maharashtra
+
 Focus: Software Development, DevOps, CI/CD Automation
 
 
