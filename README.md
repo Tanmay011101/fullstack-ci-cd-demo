@@ -32,10 +32,23 @@ This repository demonstrates a complete DevOps workflow for a fullstack applicat
   - `README.md` — Project documentation
   - `.gitignore` — Ignored files (node_modules, logs, etc.)
 
-
-
-
 ---
+
+## 🛠️ Troubleshooting: The Docker Socket Permission Hurdle
+While building this pipeline, I encountered a classic DevOps roadblock: Jenkins (inside a container) could not communicate with the Host's Docker engine.
+
+The Error
+Permission denied: /var/run/docker.sock
+
+## My Learning Path
+Because this was a local learning environment, I intentionally explored two "fast-track" solutions to understand the mechanics of container-to-host communication:
+
+## The Root Approach: Configured the Jenkins container to run as user: root.
+
+## The Group/Permission Approach: Modified host permissions using sudo chmod 666 /var/run/docker.sock.
+
+## The Industry Standard (Future Milestone)
+I recognize that while the above methods worked for local verification, they present security risks in production. My next step for this repository is implementing GID Mapping (matching the Host's Docker Group ID inside the container) to allow secure, non-root communication.
 
 ## 🚀 Features
 - Automated builds for both frontend and backend using Jenkins.  
