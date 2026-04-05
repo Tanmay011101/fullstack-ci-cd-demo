@@ -1,0 +1,88 @@
+/* Global background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* soft pink gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Title with React logo */
+.title {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Backend message box */
+.message {
+  background: #fff;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Logos */
+.logo {
+  height: 55px;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* subtle hover effect */
+}
+
+.react {
+  filter: drop-shadow(0 0 8px #61DBFB); /* React cyan glow */
+}
+
+.node {
+  filter: drop-shadow(0 0 8px #68A063); /* Node green glow */
+}
+
+.express {
+  filter: drop-shadow(0 0 8px #f7df1e); /* Express yellow glow */
+}
+
+/* Backend logos row */
+.backend-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .logo {
+    height: 40px;
+  }
+  .message {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+}
+
